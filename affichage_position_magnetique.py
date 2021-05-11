@@ -5,10 +5,7 @@ from sense_hat import SenseHat
 # toutes les fonctions du SenseHat sont documentées ici: https://pythonhosted.org/sense-hat/api/
 sense = SenseHat()
 
-# Remet toute la matrice LED à blanc.
-sense.clear()
-
-# Exécute le code à partir de la ligne 12 jusqu'à ce que l'AstroPi s'arrète
+# Exécute en boucle le code de la ligne 10 à 14 jusqu'à ce que l'AstroPi s'arrète
 while True:
   # Obtient les données brutes du magnétomètre sur les axes x, y et z.
   raw = sense.get_compass_raw()
